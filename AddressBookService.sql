@@ -7,9 +7,9 @@ use AddressBookSystem_Service;
 
 create table AddressBookSystem
 (
-id int identity(1,1),
+id int identity(100,1),
 firstname varchar(25) not null,
-lastname varchar(25),
+lastname varchar(40),
 address varchar(50),
 city varchar(30),
 state varchar(30),
