@@ -92,6 +92,6 @@ select * from AddressBookSystem;
 
 
 --UC10_NumberOfContactPersons_By_Type
-SELECT contacttype, COUNT(id) as NumberOfContactPersons
+SELECT contacttype, COUNT(id) 
 from AddressBookSystem
 GROUP BY contacttype;
