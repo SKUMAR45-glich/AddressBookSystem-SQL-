@@ -47,12 +47,9 @@ WHERE firstname = 'NametobeDeleted';
 
 SELECT * FROM AddressBookSystem;
 
---UC6_Retrieve-Person-From-A-State-Or-City
+--UC6_Retrieve_Data_from_CityandState
 SELECT * FROM AddressBookSystem
-WHERE city = 'DGP';
-
-SELECT * FROM AddressBookSystem
-WHERE state = 'State';
+WHERE city = 'DGP' OR state = 'State';
 
 
 --UC7_Size_By_City_Or_State
