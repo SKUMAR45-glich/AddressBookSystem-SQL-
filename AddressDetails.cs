@@ -10,8 +10,10 @@ namespace AddressBookSystem
         public static string connectionString = @"Data Source=DESKTOP-SC0MR56\SQLEXPRESS;Initial Catalog=AddressBookSystem_Service;Integrated Security=True";
         SqlConnection connection = new SqlConnection(connectionString);
 
+        public List<AddressModel> addressModels;
         public void GetAllDetails()
         {
+            addressModels = new List<AddressModel>();
             try
             {
                 AddressModel addressModel = new AddressModel();

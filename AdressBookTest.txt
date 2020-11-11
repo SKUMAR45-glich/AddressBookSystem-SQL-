@@ -1,0 +1,23 @@
+using NUnit.Framework;
+using AddressBookSystem;
+
+namespace AddressBookTest
+{
+    [TestFixture]
+    class AddressBookRepoTests
+    {
+        [Test]
+        public void RetrieveAllContacts_WhenCalled_AddContactsToList()
+        {
+            AddressDetails addressDetails = new AddressDetails();
+
+            addressDetails.GetAllDetails();
+
+
+
+            var list = addressDetails.addressModels;
+
+            Assert.That(list, Is.Not.Empty);
+        }
+    }
+}
